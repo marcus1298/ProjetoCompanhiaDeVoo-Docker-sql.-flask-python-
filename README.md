@@ -79,3 +79,20 @@ x-------------------------------------------------------------------------------
 # Como funciona
 
 Este conjunto de arquivos representa uma aplicação de gerenciamento de voos. O arquivo docker-compose.yml define dois serviços: db (banco de dados PostgreSQL) e web (aplicação Flask). O arquivo Dockerfile descreve como construir a imagem da aplicação Flask a partir da imagem Python e inclui informações sobre dependências, variáveis de ambiente, portas e comandos para iniciar a aplicação. O arquivo Dockerfile-db descreve como construir a imagem do banco de dados a partir da imagem PostgreSQL e inclui informações sobre variáveis de ambiente e portas. O arquivo requirements.txt lista as dependências da aplicação Flask e o arquivo init.sql contém scripts SQL para inicializar as tabelas do banco de dados com dados de exemplo.
+
+
+1.O sistema de login foi implementado com sucesso, verificando as credenciais (email e senha) do usuário em um banco de dados e gerando uma chave de sessão única para o usuário, que é armazenada em um serviço de autenticação, como o JWT (JSON Web Tokens).
+
+2.O logout também foi implementado com sucesso, excluindo a chave de sessão armazenada no serviço de autenticação após o usuário solicitar o encerramento de sua sessão.
+
+3.O serviço de validação de sessão foi implementado verificando, com sucesso, se a chave de sessão enviada ainda é válida no serviço de autenticação e se o IP de origem é permitido.
+
+4.O serviço de retornar aeroportos foi implementado com sucesso, buscando a lista de aeroportos disponíveis na base de dados da companhia aérea.
+
+5.O serviço de retornar aeroportos por origem também foi implementado com sucesso, buscando a lista de aeroportos de destino disponíveis para o aeroporto de origem informado, também na base de dados da companhia aérea.
+
+6.O serviço de retornar voos foi implementado com sucesso, buscando a lista de voos disponíveis na base de dados da companhia aérea para a data informada.
+
+7.O serviço de pesquisar voos também foi implementado com sucesso, buscando a lista de voos disponíveis para a data e o número de passageiros informados, selecionando os voos com as menores tarifas disponíveis na base de dados da companhia aérea.
+
+8.Por fim, o serviço de efetuar compra também foi implementado com sucesso, reservando e comprando os voos e tarifas selecionados, gerando um localizador de reserva único e os números dos e-tickets, armazenando essas informações na base de dados da companhia aérea.
