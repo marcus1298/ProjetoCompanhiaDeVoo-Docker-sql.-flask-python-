@@ -44,14 +44,27 @@ Contribuição
 # Funcionalidades
 
 x------------------------------------------------------------x
+
 | Número | Serviço            | Descrição                        |
+
 x------------------------------------------------------------x
+
 | 1      | Efetuar login      | Permite efetuar e recuperar a chave de sessão utilizada para validação em cada solicitação |
+
 | 2      | Efetuar Logout     | Permite encerrar sessão atual                                                        |
+
 | 3      | Validar sessão     | Permite verificar se sessão atual não expirou e se pode ser acessada pelo IP que está tentando efetuar o acesso |
+
 | 4      | Retornar aeroportos | Retoma a lista dos aeroportos oferecidos pela companhia aérea                     |
+
 | 5      | Retornar aeroportos por origem | Retoma a lista dos aeroportos de destino de acordo com o aeroporto de origem informado |
+
 | 6      | Retornar voos      | Retoma a lista dos voos oferecidos pela companhia aérea para a data informada       |
-| 7      | Pesquisar voos     | Efetua a pesquisa de voos e retorna uma lista de voos com a menor tarifa disponível no momento para o número de passageiros informados |
+
+| 7      | Pesquisar voos     | Efetua a pesquisa de voos e retorna uma lista de voos com a menor tarifa disponível no momento para o número de passageiros informados|
+
 | 8      | Efetuar compra     | Efetua a reserva e a compra dos voos e tarifas selecionados e retorna o localizador da reserva e o números dos e-tickets |
+
+
 x------------------------------------------------------------x
+
