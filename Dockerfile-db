@@ -1,0 +1,10 @@
+FROM postgres:12
+
+ENV POSTGRES_DB=flights_db
+ENV POSTGRES_PASSWORD=secret
+
+COPY init.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 5432
+
+CMD ["postgres"]
