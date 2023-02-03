@@ -1,4 +1,4 @@
-# ProjetoCompanhiaDeVoo-Docker-sql.-flask-python-
+# ProjetoCompanhiaDeVoo-Docker-sql-flask-python-aplicação de gerenciamento de voos
 
 Bem-vindo ao nosso projeto de aviação!
 
@@ -68,3 +68,7 @@ x------------------------------------------------------------x
 
 x------------------------------------------------------------x
 
+
+# Como funciona
+
+Este conjunto de arquivos representa uma aplicação de gerenciamento de voos. O arquivo docker-compose.yml define dois serviços: db (banco de dados PostgreSQL) e web (aplicação Flask). O arquivo Dockerfile descreve como construir a imagem da aplicação Flask a partir da imagem Python e inclui informações sobre dependências, variáveis de ambiente, portas e comandos para iniciar a aplicação. O arquivo Dockerfile-db descreve como construir a imagem do banco de dados a partir da imagem PostgreSQL e inclui informações sobre variáveis de ambiente e portas. O arquivo requirements.txt lista as dependências da aplicação Flask e o arquivo init.sql contém scripts SQL para inicializar as tabelas do banco de dados com dados de exemplo.
